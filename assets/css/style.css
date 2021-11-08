@@ -14,18 +14,72 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1 {
-    Font-size: 32px;
-    color: var(--prim-color);
-}
 
 header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
+header h1 {
+    Font-size: 32px;
+    color: var(--prim-color);
+    font-weight: bold;
+    margin: 0px; 
+}
 
+header a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--prim-color);
+    background-color: var(--sec-color);
+    padding: 0;
+    margin: 0;
+}
+
+.hero-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    text-align: center;
+    margin: 1%;
+}
+
+.hero img {
+    width: 300px
+}
+
+.hero h3 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.hero p {
+    width: 25%;
+}
